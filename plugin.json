@@ -1,0 +1,18 @@
+{
+  "manifest": 2,
+  "id": "reactive-tracker",
+  "name": "Reactives",
+  "version": "0.1.0",
+  "publisher": "EQ2Advanced",
+  "description": "Beta: remaining Inquisitor and Templar reactive heals by group member. Concept by Avacii (Avacee on GitHub).",
+  "api": 2,
+  "entry": {
+    "assembly": "EQ2Advanced.ReactiveTracker.dll",
+    "type": "EQ2Advanced.ReactiveTracker.ReactivePlugin"
+  },
+  "tab": { "title": "Reactives", "order": 75 },
+  "ui": { "script": "ui/plugin.js", "style": "ui/plugin.css" },
+  "widget": { "title": "Reactives", "width": 350, "height": 230, "columns": 4, "rows": 2 },
+  "capabilities": ["live-log"],
+  "network": "none"
+}

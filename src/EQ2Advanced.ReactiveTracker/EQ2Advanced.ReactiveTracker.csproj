@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>EQ2Advanced.ReactiveTracker</AssemblyName>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../EQ2Advanced.ReactiveTracker.Core/EQ2Advanced.ReactiveTracker.Core.csproj" />
+    <!-- Public, compile-only API 2 declarations. The desktop supplies this assembly at run time. -->
+    <ProjectReference Include="../EQ2Advanced.Plugins/EQ2Advanced.Plugins.csproj" Private="false" ExcludeAssets="runtime" />
+  </ItemGroup>
+</Project>
